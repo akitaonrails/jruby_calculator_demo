@@ -1,0 +1,39 @@
+== JRuby Calculator Demonstration ==
+
+The original Java source code was copied from: http://www.beginner-java-tutorial.com/java-swing-calculator.html
+
+The only modification to the original source code was replacing 
+"Times New Roman" for "SansSerif" as the default typeface.
+
+Both Java and JRuby versions should look and behave exactly the same
+as they use the same Swing classes.
+
+The JRuby version uses more rubyisms even though it still follows
+the same class structure as the Java version.
+
+I was able to shrink it down from 644 LOC to 441 LOC, a 33% code
+reduction compared to the Java version. Although the Java version
+can also be optimized furthers (the original intention of the 
+author was to showcase Swing to beginners, not to apply advanced
+refactorings).
+
+This should serve as an introduction for Java developers wanting to
+learn more about Ruby and compare the same program, side-by-side
+implemented in both languages.
+
+== Usage
+
+To run the Java version, you have to compile it first:
+
+  javac Calculator.java
+  java Calculator
+
+To run the JRuby version, considering you already have JRuby
+installed:
+
+  jruby calculator.rb
+
+== Credits ==
+
+* Hemanth (http://www.beginner-java-tutorial.com) - for the original Java source code
+* Fabio Akita (http://www.akitaonrails.com) - for the Ruby conversion
